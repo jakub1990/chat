@@ -17,9 +17,9 @@ def get_ai_response(prompt, history):
   
   return completion.choices[0].message.content
 
-#fun_fact = get_ai_response("Give me funny fact about Poland")
+fun_fact = get_ai_response("Give me funny fact about Poland", history)
 
-#print(fun_fact)
+print(fun_fact)
 
 while True:
     prompt = input("Ask the question for AI ")
